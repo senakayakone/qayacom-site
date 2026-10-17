@@ -1,0 +1,17 @@
+# Contact form of qayacom.com (see README.md).
+name = "qayacom-contact"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+# https://contact.qayacom.com (DNS record created by Cloudflare).
+routes = [{ pattern = "contact.qayacom.com", custom_domain = true }]
+
+# Sends through Cloudflare Email Routing to a verified address.
+send_email = [{ name = "CONTACT_EMAIL" }]
+
+# Secrets (never in git), set with `npx wrangler secret put <NAME>`:
+#   TURNSTILE_SECRET  secret key of the Turnstile widget "qayacom.com"
+#   DESTINATION       verified Gmail address that receives the messages
+
+[observability]
+enabled = true

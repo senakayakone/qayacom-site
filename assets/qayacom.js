@@ -39,6 +39,7 @@
       pj3_bar: "Postes – salle de jeux", pj3_type: "Gestion de cybercafé", pj3_t: "Système de cybercafé",
       pj3_p: "Système complet pour une salle de 20 PC gaming : les PC démarrent depuis un serveur central (diskless), comptes prépayés décomptés à la seconde, connexion en scannant un QR code avec le téléphone, gestion des PS4 et PS5, vue en direct de chaque poste.",
       tag_offline: "Fonctionne sans Internet",
+      f_name: "Votre nom", f_email: "Votre e-mail", f_message: "Votre message", f_send: "Envoyer le message",
       contact_place: "📍 Vientiane, RDP lao", footer_tag: "Développement d'applications mobiles, Vientiane", privacy: "Politique de confidentialité",
     },
     lo: {
@@ -78,6 +79,7 @@
       pj3_bar: "ເຄື່ອງ – ຫ້ອງເກມ", pj3_type: "ລະບົບຮ້ານອິນເຕີເນັດ", pj3_t: "ລະບົບຮ້ານເກມ",
       pj3_p: "ລະບົບຄົບວົງຈອນສຳລັບຫ້ອງເກມ 20 ເຄື່ອງ: ຄອມພິວເຕີເປີດຈາກເຊີບເວີກາງ (diskless), ບັນຊີເຕີມເງິນລ່ວງໜ້າ ຄິດໄລ່ເປັນວິນາທີ, ເຂົ້າລະບົບໂດຍສະແກນ QR ດ້ວຍມືຖື, ຈັດການ PS4 ແລະ PS5, ເບິ່ງທຸກເຄື່ອງແບບສົດ.",
       tag_offline: "ໃຊ້ໄດ້ໂດຍບໍ່ມີເນັດ",
+      f_name: "ຊື່ຂອງທ່ານ", f_email: "ອີເມວຂອງທ່ານ", f_message: "ຂໍ້ຄວາມຂອງທ່ານ", f_send: "ສົ່ງຂໍ້ຄວາມ",
       contact_place: "📍 ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ", footer_tag: "ພັດທະນາແອັບມືຖື, ວຽງຈັນ", privacy: "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ",
     },
   };

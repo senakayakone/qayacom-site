@@ -1,0 +1,13 @@
+{
+  "name": "qayacom-contact",
+  "private": true,
+  "description": "Contact form of qayacom.com: Turnstile check, then e-mail to info@qayacom.com",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "test": "node --test test/"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.1"
+  },
+  "type": "module"
+}

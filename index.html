@@ -46,7 +46,7 @@
     <div class="langs" role="group" aria-label="Language">
       <button data-lang="en">EN</button><button data-lang="fr">FR</button><button data-lang="lo">ລາວ</button>
     </div>
-    <a class="btn btn-primary" href="mailto:info@qayacom.com" data-i18n="nav_cta">Start a project</a>
+    <a class="btn btn-primary" href="#contact" data-i18n="nav_cta">Start a project</a>
   </div>
 </nav>
 
@@ -194,8 +194,18 @@
     <div class="contact reveal">
       <h2 data-i18n="contact_title">Have an app idea?</h2>
       <p data-i18n="contact_p">Tell us about your project. We reply quickly with ideas, a plan and a price.</p>
-      <a class="btn btn-primary" href="mailto:info@qayacom.com">info@qayacom.com</a>
-      <div class="place"><span data-i18n="contact_place">📍 Vientiane, Lao PDR</span></div>
+      <form class="contact-form" data-contact-form novalidate>
+        <div class="row">
+          <label><span data-i18n="f_name">Your name</span><input name="name" autocomplete="name" maxlength="100" required></label>
+          <label><span data-i18n="f_email">Your e-mail</span><input name="email" type="email" autocomplete="email" maxlength="200" required></label>
+        </div>
+        <label><span data-i18n="f_message">Your message</span><textarea name="message" rows="5" minlength="10" maxlength="5000" required></textarea></label>
+        <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+        <div class="captcha" data-captcha></div>
+        <button class="btn btn-primary" type="submit" data-i18n="f_send">Send the message</button>
+        <p class="form-status" role="status" data-form-status></p>
+      </form>
+      <div class="place"><span data-i18n="contact_place">📍 Vientiane, Lao PDR</span> · info@qayacom.com</div>
     </div>
   </div>
 </section>
@@ -208,5 +218,7 @@
 </footer>
 
 <script src="/assets/qayacom.js"></script>
+<script src="/assets/contact.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=qayacomCaptcha&render=explicit" async defer></script>
 </body>
 </html>
