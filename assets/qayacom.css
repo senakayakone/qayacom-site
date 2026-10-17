@@ -145,3 +145,23 @@ footer a { color: var(--muted); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal, .app-icon { opacity: 1; transform: none; }
 }
+
+/* Other projects: browser frames with screenshots */
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 28px; }
+@media (max-width: 1000px) { .projects { grid-template-columns: 1fr; } }
+.project { background: var(--white); border: 1px solid var(--line); border-radius: 24px; padding: 18px 18px 24px; transition: transform .25s, box-shadow .25s; display: flex; flex-direction: column; }
+.project:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.project .frame { position: relative; display: block; border-radius: 14px; overflow: hidden; background: #0d1117; border: 1px solid var(--line); margin-bottom: 18px; }
+.project .frame img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; transition: transform .6s; }
+.project:hover .frame img:not(.phone-shot) { transform: scale(1.04); }
+.project .bar { display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #f1f4fa; border-bottom: 1px solid var(--line); position: relative; z-index: 1; }
+.project .bar i { width: 9px; height: 9px; border-radius: 50%; background: #d3dbea; }
+.project .bar i:first-child { background: #ff6b6b; } .project .bar i:nth-child(2) { background: #ffc94d; } .project .bar i:nth-child(3) { background: #4cd07d; }
+.project .bar b { margin-left: 8px; font-size: .75rem; color: var(--muted); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.project .phone-shot { position: absolute; right: 10px; bottom: 10px; width: 22% !important; aspect-ratio: 390 / 844 !important; border-radius: 12px; border: 3px solid #0b1f4d; box-shadow: 0 10px 24px rgba(0,0,0,.4); animation: drift 6s ease-in-out infinite; }
+.project .type { color: var(--blue); font-weight: 800; font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; }
+.project h3 { margin: 4px 0 8px; color: var(--navy); font-size: 1.3rem; }
+.project p { margin: 0 0 14px; color: var(--muted); flex: 1; }
+.project .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.project .tags span { background: var(--tint); color: var(--navy); border-radius: 99px; padding: 3px 10px; font-size: .8rem; font-weight: 600; }
+.project .link { margin-top: 14px; font-weight: 700; text-decoration: none; }
