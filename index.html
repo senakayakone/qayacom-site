@@ -3,24 +3,180 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Qayacom – Mobile app development</title>
-<style>
-  body { font-family: -apple-system, system-ui, sans-serif; margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box; color: #222; background: #fff; }
-  h1 { font-size: 3em; margin: 0; letter-spacing: .02em; }
-  .tagline { font-size: 1.4em; color: #3b6fe0; margin: .3em 0 1.5em; }
-  .soon { font-size: 1.1em; color: #666; }
-  footer { margin-top: 3em; font-size: .9em; }
-  footer a { color: #666; }
-</style>
+<title>Qayacom – Mobile app development in Vientiane, Laos</title>
+<meta name="description" content="Qayacom builds custom mobile apps for iPhone and Android, websites and POS systems. Based in Vientiane, Laos.">
+<meta property="og:title" content="Qayacom – Mobile app development in Vientiane, Laos">
+<meta property="og:description" content="Custom mobile apps, websites and POS systems, made in Vientiane.">
+<meta property="og:url" content="https://qayacom.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%231a5cff'/%3E%3Ctext x='20' y='28' font-family='Arial' font-weight='800' font-size='22' fill='white' text-anchor='middle'%3EQ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Noto+Sans+Lao:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/qayacom.css">
 </head>
 <body>
-<h1>Qayacom</h1>
-<p class="tagline">Mobile app development</p>
-<p class="soon">🚧 Under construction · En construction</p>
+
+<!-- Icon set (stroke icons), used with <svg><use href="#i-..."/></svg> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
+  <symbol id="i-pos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="12" rx="2"/><path d="M7 21h10M12 15v6M7 8h4M7 11h8"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11L21 7H6.2"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v8a3 3 0 0 0 6 0V3M7 3v18M17 3c-2 2-3 5-3 8h3v10"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></symbol>
+</svg>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo" href="/">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1a5cff"/><circle cx="19" cy="19" r="9" fill="none" stroke="#fff" stroke-width="4"/><path d="M24 24l7 7" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+      Qayacom
+    </a>
+    <div class="nav-links">
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#process" data-i18n="nav_process">How we work</a>
+      <a href="#work" data-i18n="nav_work">Our work</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="langs" role="group" aria-label="Language">
+      <button data-lang="en">EN</button><button data-lang="fr">FR</button><button data-lang="lo">ລາວ</button>
+    </div>
+    <a class="btn btn-primary" href="mailto:info@qayacom.com" data-i18n="nav_cta">Start a project</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><span class="dot"></span><span data-i18n="hero_pill">Mobile app studio in Vientiane, Laos</span></span>
+      <h1><span data-i18n="hero_title_1">We build the apps</span> <span class="grad" data-i18n="hero_title_2">your business needs</span></h1>
+      <p class="lead" data-i18n="hero_lead">Custom mobile apps for iPhone and Android, websites and POS systems. Designed and developed in Vientiane, published on the App Store and Google Play.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact" data-i18n="hero_cta">Talk about your project</a>
+        <a class="btn btn-ghost" href="#work" data-i18n="hero_cta2">See our work</a>
+      </div>
+    </div>
+    <div class="device-stage" aria-hidden="true">
+      <div class="blob"></div>
+      <div class="device">
+        <div class="notch"></div>
+        <div class="screen">
+          <div class="app-icon" style="animation-delay:.2s"><img src="/laoalphabet/img/icon.webp" alt=""></div>
+          <div class="app-icon" style="animation-delay:.35s;color:#1a5cff"><svg><use href="#i-cart"/></svg></div>
+          <div class="app-icon" style="animation-delay:.5s;color:#f97316"><svg><use href="#i-food"/></svg></div>
+          <div class="app-icon" style="animation-delay:.65s;color:#16a34a"><svg><use href="#i-pos"/></svg></div>
+          <div class="app-icon" style="animation-delay:.8s;color:#9333ea"><svg><use href="#i-cal"/></svg></div>
+          <div class="app-icon" style="animation-delay:.95s;color:#0ea5e9"><svg><use href="#i-chat"/></svg></div>
+          <div class="app-icon" style="animation-delay:1.1s;color:#e11d48"><svg><use href="#i-truck"/></svg></div>
+          <div class="app-icon" style="animation-delay:1.25s;color:#1a5cff"><svg><use href="#i-chart"/></svg></div>
+          <div class="app-icon" style="animation-delay:1.4s;color:#ca8a04"><svg><use href="#i-store"/></svg></div>
+        </div>
+      </div>
+      <div class="orbit">
+        <div class="chip" style="left:0;top:14%"><svg><use href="#i-phone"/></svg>iOS · Android</div>
+        <div class="chip" style="right:0;top:34%;animation-delay:-2s"><svg><use href="#i-globe"/></svg><span data-i18n="chip_web">Websites</span></div>
+        <div class="chip" style="left:4%;bottom:12%;animation-delay:-4s"><svg><use href="#i-pos"/></svg><span data-i18n="chip_pos">POS systems</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap center">
+    <span class="kicker" data-i18n="services_kicker">What we do</span>
+    <h2 data-i18n="services_title">Made to measure, from idea to launch</h2>
+    <p class="sub" data-i18n="services_sub">Each project is built around your business: your customers, your products, your language.</p>
+    <div class="services">
+      <div class="card reveal">
+        <div class="ico"><svg><use href="#i-phone"/></svg></div>
+        <h3 data-i18n="sv1_t">Custom mobile apps</h3>
+        <p data-i18n="sv1_p">Apps for iPhone and Android, built in one code base and published in your name on the stores.</p>
+        <ul><li data-i18n="sv1_1">Design and user experience</li><li data-i18n="sv1_2">In-app purchases, accounts, notifications</li><li data-i18n="sv1_3">App Store and Google Play publishing</li></ul>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg><use href="#i-globe"/></svg></div>
+        <h3 data-i18n="sv2_t">Websites</h3>
+        <p data-i18n="sv2_p">Fast, modern websites that work on every phone, in Lao, English or French.</p>
+        <ul><li data-i18n="sv2_1">Company and product sites</li><li data-i18n="sv2_2">Online catalogues and booking</li><li data-i18n="sv2_3">Domain, hosting and HTTPS</li></ul>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg><use href="#i-pos"/></svg></div>
+        <h3 data-i18n="sv3_t">POS systems</h3>
+        <p data-i18n="sv3_p">Point-of-sale software for shops, restaurants and cafés, on tablet or computer.</p>
+        <ul><li data-i18n="sv3_1">Sales, stock and receipts</li><li data-i18n="sv3_2">Kip, baht and dollar</li><li data-i18n="sv3_3">Daily reports for the owner</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="tinted">
+  <div class="wrap center">
+    <span class="kicker" data-i18n="process_kicker">How we work</span>
+    <h2 data-i18n="process_title">Four clear steps</h2>
+    <p class="sub" data-i18n="process_sub">You always know where your project stands.</p>
+    <div class="steps">
+      <div class="step reveal"><h3 data-i18n="st1_t">Listen</h3><p data-i18n="st1_p">We meet, understand your needs and agree on a clear plan and price.</p></div>
+      <div class="step reveal"><h3 data-i18n="st2_t">Design</h3><p data-i18n="st2_p">You see the screens before we code, and we adjust them together.</p></div>
+      <div class="step reveal"><h3 data-i18n="st3_t">Build</h3><p data-i18n="st3_p">We develop and you test real versions on your own phone.</p></div>
+      <div class="step reveal"><h3 data-i18n="st4_t">Launch & support</h3><p data-i18n="st4_p">We publish, follow the first users and keep the app up to date.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker" data-i18n="work_kicker">Our work</span>
+      <h2 data-i18n="work_title">Made by Qayacom</h2>
+    </div>
+    <div class="work reveal">
+      <div class="media"><img class="shot" src="/laoalphabet/img/shot-en-write.webp" alt="Lao Alphabet for Kids" loading="lazy"></div>
+      <div class="body">
+        <div class="app"><img src="/laoalphabet/img/icon.webp" alt=""><div><h3>Lao Alphabet for Kids</h3><span data-i18n="work_type">Educational app · iPhone & iPad</span></div></div>
+        <p data-i18n="work_p">An app that teaches children the Lao alphabet: sounds, handwriting with the right strokes, games and stickers, in three languages. Available on the App Store since 2020.</p>
+        <div class="tags"><span>Flutter</span><span>iOS</span><span>Android</span><span data-i18n="tag_iap">In-app purchase</span><span data-i18n="tag_lang">3 languages</span></div>
+        <a class="btn btn-primary" href="/laoalphabet/" data-i18n="work_cta">Discover the app</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="wrap center">
+    <span class="kicker" data-i18n="why_kicker">Why Qayacom</span>
+    <h2 data-i18n="why_title">A local team, international standards</h2>
+    <div class="why">
+      <div class="reveal"><b data-i18n="w1_t">Based in Vientiane</b><span data-i18n="w1_p">We meet you in person and understand the Lao market.</span></div>
+      <div class="reveal"><b data-i18n="w2_t">Lao, English, French</b><span data-i18n="w2_p">Apps and sites for customers in Laos and abroad.</span></div>
+      <div class="reveal"><b data-i18n="w3_t">Published on the stores</b><span data-i18n="w3_p">We handle the App Store and Google Play for you.</span></div>
+      <div class="reveal"><b data-i18n="w4_t">Long-term support</b><span data-i18n="w4_p">Updates, fixes and new features after launch.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <h2 data-i18n="contact_title">Have an app idea?</h2>
+      <p data-i18n="contact_p">Tell us about your project. We reply quickly with ideas, a plan and a price.</p>
+      <a class="btn btn-primary" href="mailto:info@qayacom.com">info@qayacom.com</a>
+      <div class="place"><span data-i18n="contact_place">📍 Vientiane, Lao PDR</span></div>
+    </div>
+  </div>
+</section>
+
 <footer>
-  <a href="/laoalphabet/">Lao Alphabet Game</a> ·
-  <a href="/confidentialite/">Privacy / Confidentialité</a> ·
-  <a href="mailto:info@qayacom.com">info@qayacom.com</a>
+  <div class="wrap">
+    <span>© 2026 Qayacom · <span data-i18n="footer_tag">Mobile app development, Vientiane</span></span>
+    <span><a href="/laoalphabet/">Lao Alphabet for Kids</a> · <a href="/confidentialite/" data-i18n="privacy">Privacy policy</a></span>
+  </div>
 </footer>
+
+<script src="/assets/qayacom.js"></script>
 </body>
 </html>
