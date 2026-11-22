@@ -7,6 +7,8 @@ Site statique (GitHub Pages, sans outil de build).
 - `/laoalphabet/` : site de l'app Lao Alphabet for Kids, avec l'aide
   (`#support`, adresse d'assistance de l'App Store).
 - `/confidentialite/` : politique de confidentialité.
+- `/pimaiexpress/` : aide de l'app Pi Mai Express (adresse d'assistance de l'App Store) ;
+  `/pimaiexpress/confidentialite/` : sa politique de confidentialité.
 - `/laoalphabet/privacy-policy/` et `/contact/` : anciennes adresses,
   redirigées.
 
